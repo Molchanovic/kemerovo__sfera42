@@ -1,0 +1,262 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*----------------------------------------------------------------------------------------*/
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;*/
+/*--------Header---------*/
+body{
+	background-color: #fff;
+}
+.header {
+	width: 100%;
+	position: fixed;
+	background-color: #FF0000;
+
+}
+.container {
+	width: 1450px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.header__row{
+	display: flex;
+	justify-content: center;
+	
+}
+.link {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 50px;
+	margin-left: 60px;
+
+	transition-duration: 0.3s;
+}
+.link:hover{
+	color: #000;
+	font-size: 20px;
+}
+.link:active{
+	color: #FF7373;
+	font-size: 20px;
+}
+.link__first{
+	margin-left: 0;
+}
+/*------------Subheader------------*/
+
+.subheader {
+	padding: 0 40px;
+	width: 100%;
+	background-color: #FF4040;
+	height: 40px;
+}
+.subheader__row{
+	display: flex;
+	justify-content: space-between;
+}
+.subheader__phone {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	line-height: 40px;
+
+	transition-duration: 0.5s;
+}
+.subheader__phone:hover{
+	color: #000;
+	font-size: 20px;
+}
+.subheader__img{
+	width: 34px;
+	margin-top: 3px;
+	height: 34px;
+	margin-right: 20px;
+}
+.insta {}
+.subheader__text {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	line-height: 20px;
+}
+
+/*--------Slider--------*/
+.slider {
+	width: 100%;
+	height: 800px;
+	overflow:hidden;
+	margin: 0 auto;
+
+}
+.meddle {}
+.sliders {
+	width: 400%;
+	height: 100%;
+	display: flex;
+}
+.slide {
+	width: 25%;
+	transition: all 0.6s ease;
+}
+.slide img{
+	width: 100%;
+	height: auto;
+
+}
+.navigation {
+	position: relative;
+	bottom: 5%;
+	left: 95%;
+	transform: translateX(-50%);
+	display: flex;
+}
+.bar {
+	width: 25px;
+	height: 6px;
+	margin: 8px;
+	cursor: pointer;
+	background-color: #ddbd;
+	opacity: 0.5;
+	border-radius: 10px;
+	transition: all 0.5 ease;
+}
+.bar:hover{
+	opacity: 0.9;
+	transform: scale(1.1);
+}
+input[name = 'r'] {
+	position: absolute;
+	visibility: hidden;
+
+}
+
+#r1:checked ~ .s1 {
+	margin-left: 0;
+}
+#r2:checked ~ .s1 {
+	margin-left: -25%;
+}
+#r3:checked ~ .s1 {
+	margin-left: -50%;
+}
+#r4:checked ~ .s1 {
+	margin-left: -75%;
+}
+/*----------Main------------*/
+.main{
+	width: 100%;
+	margin-top: 150px;
+}
+.main__row {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex: 0 1 auto;
+}
+.main__item {
+	width: 25%;
+}
+.main__img {
+	width: 50%;
+	height: auto;
+}
+.main__text {
+	font-family: 'Oswald', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	margin-top: 40px;
+}
+.main__text span {
+	color: 	#FF4040;
+	font-weight: 500;
+}
+/*-----------------Cars------------------*/
+.cars {
+	width: 100%;
+	margin-top: 150px;
+	
+}
+.cars__row{
+	display: flex;
+	text-align: center;
+
+}
+.cars__item {
+	width: 100%;
+	border: 1px red solid;
+}
+.avto {
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	background-color: red;
+	background-image: url(../img/img/test.jpg);
+	background-position: center;
+}
+.avto__img {
+	width: 100%;
+}
+
+/*--------------Footer-------------*/
+.footer {
+	width: 100%;
+	height: 60px;
+	background-color: #333;
+}
+.footer__row {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__info {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 60px;
+}
+.nomber {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 60px;
+}
+.index-y{
+	border-left: 0px solid red;
+}
+.index-q{
+	border-top: 0px solid red;
+}
